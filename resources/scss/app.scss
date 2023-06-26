@@ -1,0 +1,54 @@
+@import '~bootstrap/scss/bootstrap';
+
+header{
+  height: 75px;
+
+  .navbar-collapse{
+
+    ul{
+
+      li{
+
+        a{
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+aside{
+  height: 100%;
+  width: 220px;
+
+  nav{
+
+    ul{
+
+      list-style: none;
+
+      li{
+
+        a{
+          color: white;
+          text-decoration: none;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+.main-wrapper{
+  height: calc(100vh - 75px);
+}
+
+.table{
+  cursor: pointer;
+}
+
+.ck-editor__editable_inline {
+  min-height: 200px;
+}
