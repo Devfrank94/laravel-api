@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\ProjectController;
+use App\Http\Controllers\Api\LeadController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,3 +29,6 @@ Route::namespace('Api')
           Route::get('/detail-project/{slug}', [ProjectController::class, 'projectDetail']);
 
         });
+
+
+Route::post('/contacts', [LeadController::class, 'store']);
